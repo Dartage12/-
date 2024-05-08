@@ -1,7 +1,6 @@
-// Add event listeners to "Add to Cart" buttons
+
 document.querySelectorAll('.products li button').forEach(button => {
     button.addEventListener('click', () => {
-        // Add product to cart
         const product = button.parentNode;
         const cart = document.querySelector('.cart ul');
         const cartItem = document.createElement('li');
@@ -14,8 +13,6 @@ document.querySelectorAll('.products li button').forEach(button => {
     });
 });
 
-// Add event listener to "Checkout" button
 document.querySelector('.cart button').addEventListener('click', () => {
-    // Handle checkout process
-    alert('Checkout process not implemented yet!');
+    alert('Процесс оформления заказа еще не реализован!');
 });
